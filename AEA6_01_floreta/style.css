@@ -1,0 +1,95 @@
+body {
+
+}
+
+.fulla {
+    height: 100px;
+    width: 100px;
+    background: green;
+    border-radius: 100% 0% 100% 0%;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    transform-origin: bottom left;
+    background-image: linear-gradient(80deg, rgb(0, 0, 0), rgb(60, 0, 255), rgb(255, 0, 0));
+}
+
+.f1 {
+    rotate: 60deg;
+}
+.f2 {
+    rotate: 120deg;
+}
+.f3 {
+    rotate: 180deg;
+}
+.f4 {
+    rotate: 240deg;
+}
+
+.f5 {
+    rotate: 300deg;
+}
+
+.f6 {
+    rotate: 360deg;
+}
+
+.cor {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: red;
+    position: relative;
+    top: 125px;
+    left:125px;
+    background-image: linear-gradient(80deg, rgb(255, 0, 187), rgb(191, 255, 0));
+}
+
+.flor {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation: 10s rotacio linear infinite;
+    z-index: 5px;
+}
+
+@keyframes rotacio {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.tija {
+    background: green;
+    height: 600px;
+    width: 20px;
+    position: relative;
+    left: 140px;
+    top: 200px;
+    float: left;
+    padding: left;
+    background-image: linear-gradient(lightgreen, green);
+}
+
+.fullatija {
+    height: 100px;
+    width: 100px;
+    background: green;
+    border-radius: 100% 0% 100% 0%;
+    position: relative;
+    top: 500px;
+    left: 150px;
+    background-image: linear-gradient(lightgreen, green);
+}
+
+.conjunt:hover .flor {
+    animation: 0.9s rotacio linear infinite;
+}
+.conjunt {
+    width: 300px;
+    height: 800px;
+}

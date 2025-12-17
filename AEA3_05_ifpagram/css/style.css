@@ -1,0 +1,334 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+.contenidor {
+    width: 1716px;
+    margin: auto;
+}
+
+.nav {
+    height: 166px;
+}
+
+.friends {
+    height: 180px;
+    width: 1300px;
+    margin: auto;
+}
+
+.pics {
+    height: 1860px;
+    text-shadow: black;
+}
+
+.logo {
+    height: 45px;
+    width: 215px;
+    background-color: white;
+    float: left;
+    margin: 40px 0 0 0;
+    background-image:url(../img/logo.jpg);
+}
+
+.menu {
+    height: 37px;
+    width: 299px;
+    float: left;
+    margin: 40px 0 0 493px;
+    
+}
+
+.menu ul li {
+    width: 40px;
+    height: 40px;
+
+    margin: 0 10px;
+    float: left;
+    display: block;
+    background-image: url(../img/menu.jpg)
+}
+
+.menu ul li:hover {
+    opacity: 0.6;
+}
+
+.inici {
+    background-position:-8px -2px;
+}
+
+.cerca {
+    background-position: -93px -2px;
+}
+
+.directes {
+    background-position: -174px 0;
+}
+
+.favorits {
+    background-position: -259px -0px;
+
+}
+
+.menu ul {
+    margin: 0;
+}
+
+.perfil {
+    width: 96px;
+    height: 120px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    opacity: 0.6;
+
+}
+
+.foto  {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    float: left;
+    background-image:url(../img/AOKDFNHSJD.png);    border: brown 5px solid;
+    box-shadow: inset 0px 0px 10px white;
+}
+
+.nil {
+    background-image:url(../img/474c27ec-9412-4b01-b4fd-7344b1b972cc.png); 
+    float: left;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    background-size: cover;
+}
+
+.marc {
+    background-image:url(../img/flat\,750x\,075\,f-pad\,750x1000\,f8f8f8.jpg);
+    float: left;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    background-size: cover; 
+}
+
+.joel {
+    background-image:url(../img/julioiglesias2.jpg);
+    float: left;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    background-size: cover; 
+}
+
+.tolga {
+    background-image: url(../img/mr-incredible-meme-meme-4.jpg);
+    float: left;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    background-size: cover;
+}
+
+.mario {
+    background-image: url(../img/ef34862c33c40f9ce27eaf47e8bdf973.jpg);
+    float: left;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    background-size: cover;
+}
+
+.jordi {
+    background-image: url(../img/31P9UAi77YL._AC_SY350_.jpg);
+    float: left;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    background-size: cover;
+}
+
+.dani {
+    background-image: url(../img/images.jpg);
+    float: left;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    background-size: cover;
+}
+
+.felipe {
+    background-image: url(../img/mono-gracioso-ropa-estudio_23-2150844116.jpg);
+    float: left;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    background-size: cover;
+}
+
+.perfil:hover {
+    opacity: 1;
+}
+
+
+.afegir {
+    width: 20px;
+    height: 20px;
+    background: blue;
+    border-radius: 50%;
+    border: 5px solid white;
+    text-align: center;
+    position: relative;
+    left: 70px;
+    bottom: 70px;
+    color: white;
+    line-height: 20px;
+}
+
+.post {
+    width: 535px;
+    height: 620px;
+    margin: 18px;
+    float: left;
+}
+
+.imatge {
+    width: 535px;
+    height: 535px;
+    background-color: black;
+    background-image: url(../img/ifpagram-3_13.jpg);
+}
+
+.info {
+    width: 267px;
+    height: 84px;
+    float: left;
+}
+
+.reaccions {
+    height: 84px;
+    width: 267px;
+    float: right;
+    text-align: right;
+}
+
+.autor {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+    background-image: url(../img/mono-gracioso-ropa-estudio_23-2150844116.jpg);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.usuari {
+    height: 25px;
+    width: 197px;
+    margin: 10px 0 0 0;
+    float: left;
+}
+
+.quan {
+    height: 25px;
+    width: 197px;
+    margin: 0;
+    float: left;
+    color: grey;
+    font-size: 12px;
+}
+
+.likes {
+    height: 25px;
+    width: 95px;
+    margin: 10px 10px 5px 5px;
+    float: left;
+}
+
+.cors {
+    float: left;
+    height: 25px;
+    width: 50%;
+    margin: 10px 0px 5px 0;
+    background-position: -259px -7px;
+    background-image: url(../img/menu.jpg)
+}
+
+.mes {
+    margin: 10px 0px 0px 0px;
+    height: 25px;
+    width: 108px;
+    text-align: center;
+    float: left;
+}
+
+.i1 {
+
+}
+
+.i2 {
+    background-image: url(../img/ifpagram-3_15.jpg)
+}
+
+.i3 {
+    background-image: url(../img/ifpagram-3_17.jpg)
+}
+
+.i4 {
+    background-image: url(../img/ifpagram-3_22.jpg)
+}
+
+.i5 {
+    background-image: url(../img/ifpagram-3_23.jpg)
+}
+
+.i6 {
+    background-image: url(../img/ifpagram-3_24.jpg)
+}
+
+.i7 {
+    background-image: url(../img/ifpagram-3_28.jpg)
+}
+
+.i8 {
+    background-image: url(../img/ifpagram-3_29.jpg)
+}
+
+.i9 {
+    background-image: url(../img/ifpagram-3_30.jpg)
+    
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+  }
+  
+  .cor {
+    margin: 0;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    background-image: url(https://www.svgrepo.com/show/95200/favourite-heart.svg);
+    background-size: 1rem 1rem;
+    float: left;
+    top: 13px;
+    left: 10px;
+  }
+  
+  .cor label {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/A_perfect_SVG_heart.svg/684px-A_perfect_SVG_heart.svg.png?20180121090836);
+    background-size: 1rem 1rem;
+    float: left;
+  }
+  
+  .cor input[type=checkbox]:checked+label {
+    opacity: 1;  
+  }

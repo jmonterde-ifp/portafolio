@@ -1,0 +1,294 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    background-color: navy;
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    text-align: center;
+    font-size: 150px;
+    margin: auto;
+    color: skyblue;
+    font-family: Arial bold, sans-serif;
+    line-height: 200px;
+    font-weight: bold;
+    letter-spacing: -4px;
+}
+
+.contenidor {
+    width: 1100px;
+    margin: 50px;
+    float: left;
+
+}
+
+.efecte {
+    width: 200px;
+    height:250px;
+    margin: 10px;
+    float: left;
+}
+
+.efecte img {
+    width: 200px;
+    align: center;
+}
+
+.efecte p {
+    text-align: center;
+}
+
+.efecte input {
+    width: 200px;
+}
+
+.desenfocar img {
+    -webkit-filter: blur(10px);
+       -moz-filter: blur {10px};
+         -o-filter: blur {10px};
+            filter: blur(3px);
+}
+
+.grisos img {
+    filter: grayscale(100%);
+}
+
+.ombra img {
+    filter: drop-shadow(6px 6px 6px purple);
+}
+
+.sepia img {
+    filter: sepia(100%);
+}
+
+.lluminositat img {
+    filter: brightness(50%);
+}
+
+.contrast img {
+    filter: contrast(50%);
+}
+
+.to img {
+    filter: hue-rotate(90deg);
+}
+
+.invertir img {
+    filter: invert(70%);
+}
+
+.saturar img {
+    filter: saturate(20%);
+}
+
+.opacitat img {
+    filter: opacity(40%);
+}
+
+h1 {
+    background: #CCC;
+    font-size: 48px;
+    clear: both;
+}
+
+.fruita {
+    background-image: url(../img/Meduixa.png);
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:auto;
+}
+
+.superposada {
+    background-image: url(../img/Llimona.png);
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:auto;
+}
+
+.multiplicar .superposada {
+    mix-blend-mode: multiply;
+}
+
+.trama .superposada {
+    mix-blend-mode: screen;
+}
+
+.superposar .superposada {
+    mix-blend-mode:overlay;
+}
+
+.enfosquir .superposada {
+    mix-blend-mode:darken;
+}
+
+.aclarir .superposada {
+    mix-blend-mode: lighten;
+}
+
+.colormesfosc .superposada {
+    mix-blend-mode: color-burn;
+}
+
+.colormesclar .superposada {
+    mix-blend-mode: color-dodge;
+}
+
+.llumintensa .superposada {
+    mix-blend-mode:hard-light;
+}
+
+.llumsuau .superposada {
+    mix-blend-mode:soft-light;
+}
+
+.diferencia .superposada {
+    mix-blend-mode:difference;
+}
+
+.exclusio .superposada {
+    mix-blend-mode:exclusion;
+}
+
+.to .superposada {
+    mix-blend-mode:hue;
+}
+
+.saturacio .superposada {
+    mix-blend-mode: saturation;
+}
+
+.color .superposada {
+    mix-blend-mode: color;
+}
+
+.lluminositat .superposada {
+    mix-blend-mode: luminosity;
+}
+
+
+.interruptor {
+    width: 50px;
+    height: 25px;
+    background: lightgrey;
+    position: relative;
+    border-radius: 12.5px;
+    border: 1px solid #999;
+    margin: auto;
+    box-shadow: 0px 0 15px 0px #000000 inset;
+  }
+  
+  input[type=checkbox] {
+    visibility: hidden;
+  }
+  
+  label {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: lightgrey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12.5px;
+    box-shadow: 10px 0 -15px 5px grey;
+  }
+  
+  input[type=checkbox]:checked+label {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: lightgrey;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    box-shadow: -10px 0 15px 5px grey;
+  }
+
+
+
+
+ 
+ 
+ 
+ 
+  /*Fem invisible el buscador */
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]::focus {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  /* Fem apareixer els diferents elements */
+  
+  input[type=range]::-webkit-slider-thumb {
+    border: 1px solid #333;
+    height: 36px;
+    width: 16px;
+    border-radius: 6px;
+    background: #fff;
+    cursor:pointer;
+    margin-top: -20px;
+    box-shadow: 1px 1px 1px #000;
+  }
+  
+  /* Fem apareixer el carril */
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  
+  input[type=range]::-moz-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  
+  
+  
+  
+  
+  
+  
