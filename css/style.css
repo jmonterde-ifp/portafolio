@@ -1,400 +1,152 @@
-/*
-	Theme Name: Portfoli Juan Carlos
-    Text Domain: ifp
-	Version: 4.7.2.68
 
-
- */
-
-
-:root {
-    /*Aqui van las variables */
-}
-
-* {
-    /*Aqui va el reset */
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-@font-face {
-  font-family: 'Overlock';
-    src: url('fonts/Overlock-Regular.woff2') format('woff2'),
-        url('fonts/Overlock-Regular.woff') format('woff'),
-        url('fonts/Overlock-Regular.svg#Overlock-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-    src: url('Overlock-Black.woff2') format('woff2'),
-        url('Overlock-Black.woff') format('woff'),
-        url('Overlock-Black.svg#Overlock-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-
-    src: url('Overlock-Bold.woff2') format('woff2'),
-        url('Overlock-Bold.woff') format('woff'),
-        url('Overlock-Bold.svg#Overlock-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-
-    font-family: 'Felipa';
-    src: url('Felipa-Regular.woff2') format('woff2'),
-        url('Felipa-Regular.woff') format('woff'),
-        url('Felipa-Regular.svg#Felipa-Regular') format('svg');
-
-    
-}
-
-
-/* Aqui van las propiedades generales */
-
-body {
-    ackground: #3F3F40;
-    background-image: radial-gradient(
-    farthest-corner at 40px 40px,
-    #a000f6 30%,
-    #000000 100%
-  );
-  font-family: "Overlock";
-}
-
-.cap {
-    width: 100%;
-    height: 1350px;
-}
-
-.barrasup {
-    height: 65px;
-    width: 100%;
-    position: fixed;
-    background: black;
-    z-index: 1;
-    font-family: 'Overlock';
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
-
-p {
-    font-size: 35px;
-    width: 200px;
-    margin: 15px ;
-    color: white;
-    position: relative;
-    float: left;
-    align-content: center;
-}
-
-.treballs {
-  position: relative;
-  float: left;
-}
-
-.titulo {
-    align-content: center;
-    text-align: center;
-    font-size: 200px;
-    height: 300px;
-    width: 100%;
-    color: white;
-    text-shadow: 0 0 25px white;
-    position: relative;
-    top: 650px;
-    font-family: 'Felipa';
-}
-
-.disseny {
-    height: 50px;
-    width: 400px;
-    position: relative;
-    float: right;
-    margin: 340px 400px 0 0px;
-    font-size: 50px;
-    color: white;
-    border-width: 40px;
-    border-top: 100px;
-    border-color: white;
-    font-weight: bold;
-}
-
-.nom {
-    height: 50px;
-    width: 260px;
-    float: left;
-    position: relative;
-    margin: 600px 0 0 550px ;
-    color: white;
-    text-align: center;
-    align-content: center;
-    font-weight: bold;
-    font-size: 40px;
-    border: solid 2px white;
-    padding: 5px 10px 5px 10px;
-    border-radius: 50px;   
-}
-
-.presentacio {
-    width: 80%;
-    height: 1000px;
-    position: relative;
-    float: left;
-    margin: 200px 0 300px 200px;
-    border: 1.5px solid rgba(209, 213, 219, 0.3);
-    border-radius: 1rem;
-    background: rgba(255, 255, 255, .25);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur (5px);
-    align-content: center;
-    text-align: center;
-}
-
-.presentacio p {
-    height: 400px;
-    width: 700px;   
-    float: right;
-    color: white;
-    text-align: left;
-    font-family: 'Overlock';
-    font-size: 30px;
-    margin: 0 130px 30px 30px;
-    position: relative;
-}
-
-.text_presentacio {
-    width: 1000px;
-    height:  800px;
-    float: right;
-}
-
-.img {
-    background-image: url(img/fotofermin.png);
-    background-size: cover;
-    border-radius: 50%;
-    height: 600px;
-    width: 600px;
-    align-content: center;
-    float: left;
-    position: relative;
-    margin: 160px 0 200px 150px;
-}
-
-.text_presentacio h1 {
-    width: 200px;
-    height: 100px;
-    position: relative;
-    float: right;
-    text-align: left;
-    margin: 200px 635px 0px 0px;
-    font-size: 100px;
-}
-
-.text_presentacio h2 {
-    width: 400px;
-    height: 60px;
-    position: relative;
-    float: right;
-    margin: 0px 435px 0px 0px;
-    font-size: 50px;
-    text-align: left;
-}
-
-.cos {
-    height:3000px;
-    width: 100%;
-}
-
-.treballs2 {
-    width: 2000px;
-    height:300px;
-    color: white;
-    font-size: 150px;
-    font-family: 'Overlock';
-    font-weight: bold;
-    position: relative;
-    margin: 0px 20px 0 0;
-    /*background-image: linear-gradient(to left, transparent, black 120% ); */
-    text-align: center;
-    align-content: center;
-    padding: 0px 0px 0 80px;
-}
-
-.horario {
-    color: white;
-    font-size: 45px;
-    margin: 15px;
-}
-
-li {
-    height: 60px;
-    width: 400px;
-    border: solid 2px white;
-    border-radius: 50px;
-    margin: 1rem;
-    padding: 5px 0 0 0;
-    float: left;
-    list-style-type: none;
-    text-align: center;
-    font-size: 40px;
-    position: relative;
-    transition-duration: 0.5s;
-}
-
-.cos ul li a {
-    line-height: 60px;
-}
-
-li.horari:hover {
-    height: 600px;
-    width: 400px;
-    transition-duration: 0.5s;
-    background-image: url(img/Foto\ Horari.png);
-    background-position: 30px 150px;
-    background-size: 350px;
-    display: block;
-    background-repeat: no-repeat;
-    border: solid 4px white;
-}
-
-li.feedly:hover {
-    height: 600px;
-    width: 400px;
-    transition-duration: 0.5s;
-    background-image: url(img/Foto_Feedly.png);
-    background-position:center;
-    background-size: cover;
-    display: block;
-}
-
-li.photoshop:hover {
-    height: 600px;
-    width: 400px;
-    transition-duration: 0.5s;
-    background-image: url(img/Foto_Photoshop.png);
-    background-position:center;
-    background-size: cover;
-    display: block;
-}
-
-li.floreta:hover {
-    height: 600px;
-    width: 400px;
-    transition-duration: 0.5s;
-    background-image: url(../img/Captura\ de\ pantalla\ 2026-01-16\ a\ las\ 17.38.08.png);
-    background-position:center;
-    background-size: cover;
-    display: block;
-}
-
-li.float:hover {
-    height: 600px;
-    width: 400px;
-    transition-duration: 0.5s;
-    background-image: url(../img/Captura\ de\ pantalla\ 2026-01-16\ a\ las\ 17.38.08.png);
-    background-position:center;
-    background-size: cover;
-    display: block;
-}
-
-li.progres:hover {
-    height: 600px;
-    width: 400px;
-    transition-duration: 0.5s;
-    background-image: url(../img/Captura\ de\ pantalla\ 2026-01-16\ a\ las\ 17.38.08.png);
-    background-position:center;
-    background-size: cover;
-    display: block;
-}
-
-li.bus:hover {
-    height: 600px;
-    width: 400px;
-    transition-duration: 0.5s;
-    background-image: url(../img/Captura\ de\ pantalla\ 2026-01-16\ a\ las\ 17.38.08.png);
-    background-position:center;
-    background-size: cover;
-    display: block;
-}
-
-li.pelys:hover {
-    height: 600px;
-    width: 400px;
-    transition-duration: 0.5s;
-    background-image: url(../img/Captura\ de\ pantalla\ 2026-01-16\ a\ las\ 17.38.08.png);
-    background-position:center;
-    background-size: cover;
-    display: block;
-}
-
-li.weblog:hover {
-    height: 600px;
-    width: 400px;
-    transition-duration: 0.5s;
-    background-image: url(../img/Captura\ de\ pantalla\ 2026-01-16\ a\ las\ 17.38.08.png);
-    background-position:center;
-    background-size: cover;
-    display: block;
-}
-
-ul {
-    width: 872px;
-    margin: auto;
-    overflow: hidden;
-    font-family: 'Overlock';
-}
-
-/* Aqui van las propiedades responsivas */
-
-@media (max-width:480px)
-{
-    body{
-        background-color: var(--color6);
+    :root {
+        /*Aqui van las variables */
     }
-}
 
-@media (min-width:481px) and (max-width:1279px)
-{
-    body{
-        background-color: var(--color7);
+    * {
+        /*Aqui va el reset */
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    @font-face {
+        /* Aqui van las fuentes personalizadas */
+    }
+
+    /* Aqui van las propiedades generales */
+
+    body {
+        background: #3F3F40;
+        ackground-image: radial-gradient(
+        farthest-corner at 40px 40px,
+        #a000f6 30%,
+        #000000 100%
+    );
+    }
+
+    .cap {
+        width: 100%;
+        height: 2000px;
+    }
+
+    .barrasup {
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        opacity: 0.5;
+        background: black;
     }
 
     p {
-        margin: 2rem;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 200px;
+        margin: 20px;
+        color: white;
+        position: relative;
+        float: left;
     }
-}
 
-@media (min-width:1280px)
-{
-    body{
-        
+    .treballs {
+    position: relative;
+    float: left;
     }
-}
 
-a:visited {
-    color: white;
-}
+    .titulo {
+        align-content: center;
+        text-align: center;
+        font-size: 250px;
+        height: 300px;
+        width: 100%;
+        color: white;
+        text-shadow: 0 0 25px white;
+        position: relative;
+        top: 650px;
+    }
 
-a:link {
-    line-height: 10rem;
-    color: white;
-    text-decoration: none;
-}
+    .nombre {
+        height: 200px;
+        width: 100%;
+        color: white;
+        font-size: 300px;
+        text-align: center;
+        opacity: 0.8;
+    }
 
-a:hover {
-    color: yellow;
-}
+    .slogan {
+        background: red;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        float: left;
+        margin: 100px;
+    }
 
-a:active {
-    color: yellowgreen;
-}
+    li {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background: red;
+        margin: 1rem;
+        float: left;
+        list-style-type: none;
+        text-align: center;
+        align-content: center;
+        font-size: 24px;
+        position: relative;
+    }
 
+    li:hover {
+        opacity: 50%;
+    }
+    ul {
+        width: 36rem;
+        margin: auto;
+    }
 
-/*
-Fitxers
-https://github.com/jmonterde-ifp/portafolio/
+    /* Aqui van las propiedades responsivas */
 
-Pàgina Pública
-https://jmonterde-ifp.github.io/portafolio/ */
+    @media (max-width:480px)
+    {
+        body{
+            background-color: var(--color6);
+        }
+    }
+
+    @media (min-width:481px) and (max-width:1279px)
+    {
+        body{
+            background-color: var(--color7);
+        }
+
+        p {
+            margin: 2rem;
+        }
+    }
+
+    @media (min-width:1280px)
+    {
+        body{
+            
+        }
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:link {
+        line-height: 10rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: yellow;
+    }
+
+    a:active {
+        color: yellowgreen;
+    }
+
