@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom left, pink 65%, white 35%);
+}
+
+.cap {
+    height: 589px;
+    width: 100%;
+}
+
+.cos {
+    height: 780px;
+    padding: 5px;
+}
+
+.peu {
+    height: 220px;
+    align-content: center;
+    margin: auto;
+}
+
+
+.titol {
+    width: 900px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+
+.cars {
+    width: 300px;
+    margin: auto;
+    float: left;
+    text-align: right;
+    left: 50px;
+    position: relative;
+}
+
+.and {
+    width: 90px;
+    margin: auto;
+    float: left;
+    position: relative;
+    left: 53px;
+    color: grey;
+}
+
+.films {
+    width: 300px;
+    margin: auto;
+    float: left;
+    position: relative;
+    left: 50px;
+}
+
+.fototransicio {
+    width: 900px;
+    height: 589px;
+    background-image: url(/img/ani/rider.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    position: relative;
+    bottom: 60px;
+    right: 30px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.titol1 {
+    color: black;
+    
+}
+
+.titol2 {
+    color: grey;
+}
+
+.titol3 {
+    color: black;
+}
+
+.fotos {
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+}
+
+.foto {
+    height: 240px;
+    width: 300px;
+    background: white;
+    float: left;
+    margin: 10px;
+    opacity: 50%;
+    transition: transform 2s ease-in-out;
+}
+
+.foto:hover {
+    opacity: 100%;
+    transform: rotate(360deg) ;
+}
+
+
+.cotxe {
+    width: 300px;
+    height: 200px;
+    background: black;
+    background-image: url(/img/small/small_pulp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c1 {
+    background-image: url(/img/small/small_taxi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c2 {
+    background-image: url(/img/small/small_bond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c3 {
+    background-image: url(/img/small/small_ghost.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c4 {
+    background-image: url(/img/small/small_bean.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c5 {
+    background-image: url(/img/small/small_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c6 {
+    background-image: url(/img/small/small_rider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c7 {
+    background-image: url(/img/small/small_team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.c8 {
+    background-image: url(/img/small/small_break.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.nom {
+    background:. cyan;
+    width: 300px;
+    height:40px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.logo {
+    width: 250px;
+    height: 220px;
+    margin: auto;
+    background-image: url(/img/logo_carsandfilms.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@media (max-width:940px) {
+    .fotos {
+    width: 940px;
+    height:780px;
+    position: relative;
+    float: left;
+}
+
+.fototransicio {
+    width: 600px;
+    height: 389px;
+    background-image: url(/img/ani/rider.png);
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-size: contain;
+    bottom: 60px;
+    right: 30px;
+    margin: auto;
+    position: relative;
+    transition: opacity 0.5s ease-in-out;
+}
+}

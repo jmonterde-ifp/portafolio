@@ -1,0 +1,151 @@
+
+:root {
+    /*Aqui van las variables */
+}
+
+* {
+    /*Aqui va el reset */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    /* Aqui van las fuentes personalizadas */
+}
+
+/* Aqui van las propiedades generales */
+
+body {
+    background: #3F3F40;
+    ackground-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #a000f6 30%,
+    #000000 100%
+  );
+}
+
+.cap {
+    width: 100%;
+    height: 2000px;
+}
+
+.barrasup {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    opacity: 0.5;
+    background: black;
+}
+
+p {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    margin: 20px;
+    color: white;
+    position: relative;
+    float: left;
+}
+
+.treballs {
+  position: relative;
+  float: left;
+}
+
+.titulo {
+    align-content: center;
+    text-align: center;
+    font-size: 250px;
+    height: 300px;
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 25px white;
+    position: relative;
+    top: 650px;
+}
+
+.nombre {
+    height: 200px;
+    width: 100%;
+    color: white;
+    font-size: 300px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.slogan {
+    background: red;
+    height: 300px;
+    width: 400px;
+    position: relative;
+    float: left;
+    margin: 100px;
+}
+
+li {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: red;
+    margin: 1rem;
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    align-content: center;
+    font-size: 24px;
+    position: relative;
+}
+
+li:hover {
+    opacity: 50%;
+}
+ul {
+    width: 36rem;
+    margin: auto;
+}
+
+/* Aqui van las propiedades responsivas */
+
+@media (max-width:480px)
+{
+    body{
+        background-color: var(--color6);
+    }
+}
+
+@media (min-width:481px) and (max-width:1279px)
+{
+    body{
+        background-color: var(--color7);
+    }
+
+    p {
+        margin: 2rem;
+    }
+}
+
+@media (min-width:1280px)
+{
+    body{
+        
+    }
+}
+
+a:visited {
+    color: white;
+}
+
+a:link {
+    line-height: 10rem;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: yellowgreen;
+}

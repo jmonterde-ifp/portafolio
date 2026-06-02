@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Overlock', sans-serif;
+    background:
+        radial-gradient(#8b00d4, #111);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.2rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+nav a:hover {
+    color: #d28cff;
+    opacity: 1;
+}
+
+/* HERO PRINCIPAL */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.subtitol {
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.hero h1 {
+    font-family: 'Felipa';
+    font-size: clamp(4rem, 10vw, 8rem);
+    line-height: 1;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.hero h2 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* BOTÓ */
+
+.boto {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    border-radius: 999px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.boto:hover {
+    background: white;
+    color: black;
+}
+
+/* PRESENTACIÓ */
+
+#presentacio {
+    padding: 8rem 8%;
+}
+
+.presentacio-container {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 4rem;
+}
+
+/* FOTO */
+
+.foto {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: url(/img/FotoPerfil.webp);
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+/* TEXT PRESENTACIÓ */
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.text h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #d28cff;
+    margin-top: 1rem;
+    border-radius: 999px;
+}
+
+.text p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    margin-bottom: 1.8rem;
+    color: #e5e5e5;
+}
+
+/* SECCIÓ PROJECTES */
+
+#treballs {
+    padding: 8rem 8%;
+}
+
+.titol-seccio {
+    text-align: center;
+    font-size: clamp(3rem, 6vw, 5rem);
+    margin-bottom: 5rem;
+}
+
+/* GRID PROJECTES */
+
+.grid-projectes {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* CARDS */
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #d7d7d7;
+    line-height: 1.6;
+}
+
+/* HERO PROJECTES CREATIUS */
+
+.hero-projectes {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+}
+
+.hero-projectes-content {
+    max-width: 900px;
+}
+
+.hero-projectes h1 {
+    font-family: 'Felipa';
+    font-size: clamp(3rem, 8vw, 6rem);
+    margin-bottom: 2rem;
+    line-height: 1.1;
+}
+
+.descripcio-hero {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    opacity: 0.85;
+    font-size: 1.1rem;
+}
+
+/* GALERIA */
+
+.galeria-section {
+    padding: 4rem 8%;
+}
+
+.galeria-section h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 3rem;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* PROJECTE CARD */
+
+.projecte-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.4s;
+    max-width: 500px;
+}
+
+.projecte-card:hover {
+    transform: translateY(-8px);
+}
+
+.projecte-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.4s;
+}
+
+.projecte-card:hover img {
+    transform: scale(1.03);
+}
+
+/* INFO PROJECTE */
+
+.projecte-info {
+    padding: 1.5rem;
+}
+
+.projecte-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.projecte-info span {
+    color: #d28cff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.projecte-info p {
+    opacity: 0.8;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #080808;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.frase {
+    color: #d28cff;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.linia-contacte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+
+.linia-contacte a,
+.linia-contacte p,
+.linia-contacte span {
+    color: white;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.linia-contacte a:hover {
+    color: #d28cff;
+    opacity: 1;
+}
+
+.copy {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    opacity: 0.4;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px) {
+
+    .presentacio-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text h2 {
+        font-size: 3rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+
+    .foto {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media(max-width:600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .presentacio-container {
+        padding: 2rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    .linia-contacte {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .linia-contacte span {
+        display: none;
+    }
+
+    .projecte-card img {
+        height: 320px;
+    }
+
+}
